@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Base application theme. -->
+<style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/purple_500</item>
+    <item name="colorPrimaryVariant">@color/purple_700</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/teal_200</item>
+    <item name="colorSecondaryVariant">@color/teal_700</item>
+    <item name="colorOnSecondary">@color/black</item>
+    <!-- Status bar color. -->
+    <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    <!-- Customize your theme here. -->
+
+    <!-- Add these lines if they are missing, especially for Compose <-> View interop or system UI styling -->
+    <item name="android:windowLightStatusBar" tools:targetApi="m">true
+    </item> <!-- Or false based on your primary color -->
+    <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true
+    </item> <!-- Or false -->
+    <item name="android:navigationBarColor">@android:color/transparent
+    </item> <!-- Optional: For edge-to-edge -->
+</style>
+
+<!-- Optional: If you want a theme specifically for your Compose Activity without an ActionBar -->
+<style name="Theme.MyApplication.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <!-- Customize as above, but without ActionBar specific items if not needed -->
+    <item name="colorPrimary">@color/purple_500</item>
+    <item name="colorPrimaryVariant">@color/purple_700</item>
+    <item name="colorOnPrimary">@color/white</item>
+    <item name="colorSecondary">@color/teal_200</item>
+    <item name="colorSecondaryVariant">@color/teal_700</item>
+    <item name="colorOnSecondary">@color/black</item>
+    <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+    <item name="android:navigationBarColor">@android:color/transparent</item>
+</style>
+</resources>

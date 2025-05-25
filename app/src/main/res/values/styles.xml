@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TransparentSearchBar" parent="Widget.Material3.SearchBar">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColorHint">@color/soft_grey</item>
+        <item name="android:textColor">@color/deep_navy</item>
+    </style>
+
+    <style name="RoundedSearchBar" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="RoundedFab" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+</resources> 
