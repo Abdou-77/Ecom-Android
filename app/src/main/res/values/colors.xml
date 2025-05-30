@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="soft_grey">#888888</color>
+    <!-- New color palette -->
+    <color name="gray_100">#f8f9fa</color>
+    <color name="gray_200">#e9ecef</color>
+    <color name="gray_300">#dee2e6</color>
+    <color name="gray_400">#ced4da</color>
+    <color name="gray_500">#adb5bd</color>
+    <color name="gray_600">#6c757d</color>
+    <color name="gray_700">#495057</color>
+    <color name="gray_800">#343a40</color>
+    <color name="gray_900">#212529</color>
+
+    <!-- Primary colors -->
+    <color name="primary">#000000</color>
+    <color name="primary_dark">#1976D2</color>
+    <color name="primary_light">#BBDEFB</color>
+    
+    <!-- Accent colors -->
+    <color name="accent">#000000</color>
+    <color name="accent_dark">#F50057</color>
+    
+    <!-- Text colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#9E9E9E</color>
+    
+    <!-- Background colors -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="divider">#EEEEEE</color>
+    
+    <!-- Status colors -->
+    <color name="success">#4CAF50</color>
+    <color name="error">#B00020</color>
+    <color name="warning">#FFC107</color>
+    
+    <!-- Common colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#757575</color>
+
+    <!-- Legacy colors (required by the app) -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="soft_grey">#9E9E9E</color>
     <color name="deep_navy">#0A1D37</color>
     <color name="glass_color">#66FFFFFF</color>
-    <color name="card_stroke">#E0E0E0</color>
-    <color name="ultra_light_grey">#FAFAFA</color>
+
+    <!-- Ripple color -->
+    <color name="ripple">#1F000000</color>
 </resources>
