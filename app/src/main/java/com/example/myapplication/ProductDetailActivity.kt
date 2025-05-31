@@ -9,6 +9,16 @@ import androidx.appcompat.widget.Toolbar
 import com.bumptech.glide.Glide
 import com.google.android.material.button.MaterialButton
 
+/**
+ * Activity that displays detailed information about a product.
+ * 
+ * This activity is responsible for:
+ * - Displaying product details including title, price, description, and image
+ * - Showing product rating and review count
+ * - Handling "Add to Cart" functionality
+ * 
+ * @property EXTRA_PRODUCT_ID The key used to pass the product ID through the intent
+ */
 class ProductDetailActivity : AppCompatActivity() {
     companion object {
         const val EXTRA_PRODUCT_ID = "extra_product_id"
@@ -28,6 +38,10 @@ class ProductDetailActivity : AppCompatActivity() {
         fetchProductDetails(productId)
     }
 
+    /**
+     * Sets up the toolbar with navigation functionality.
+     * Configures the toolbar to show a back button and handle navigation events.
+     */
     private fun setupToolbar() {
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -35,6 +49,11 @@ class ProductDetailActivity : AppCompatActivity() {
         toolbar.setNavigationOnClickListener { onBackPressed() }
     }
 
+    /**
+     * Fetches product details from the API.
+     * 
+     * @param productId The ID of the product to fetch
+     */
     private fun fetchProductDetails(productId: Int) {
         ApiClient.api.getProduct(productId).enqueue(object : retrofit2.Callback<Product> {
             override fun onResponse(call: retrofit2.Call<Product>, response: retrofit2.Response<Product>) {
@@ -51,6 +70,11 @@ class ProductDetailActivity : AppCompatActivity() {
         })
     }
 
+    /**
+     * Displays the product details in the UI.
+     * 
+     * @param product The product object containing all the details to display
+     */
     private fun displayProductDetails(product: Product) {
         findViewById<TextView>(R.id.productTitle).text = product.title
         findViewById<TextView>(R.id.productPrice).text = "$${product.price}"
